@@ -1,0 +1,52 @@
+Doctype htmt 
+html 
+   head   
+   meta(charset='UTF-8')
+    title=Natours #(tour) 
+    link(rel="stylesheet" href ="css/style.css")
+    link(rel="shortcut icon" href ="css/style.favicon.png")
+    link(rel='stylesheet' href="")
+<head>
+<meta charset="UTF-8"/>doctype html
+html
+  head
+    block head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet' href='/css/style.css')
+      link(rel='shortcut icon' type='image/png' href='https://github.com/lgope/Natours/blob/master/public/img/logo-green-round.png?raw=true')
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+      title Natours | #{title}
+
+  body(data-alert=`${alert ? alert : ''}`)
+
+    // HEADER
+    include _header
+
+    // CONTENT
+    block content
+      h1 This is a placeholder heading
+
+    // FOOTER
+    include _footer
+
+
+    script(src='https://js.stripe.com/v3/')
+    script(src='/js/bundle.js')
+<meta name ="viewpoint" content="width=device-width,initial-scale=1.0"/>
+title Natours |Exciting tours for adventorous people 
+
+link
+href="https://fonts.googleapis.com/csss?family=Lato:300,300i,700"
+rel="stylesheet"
+
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="shortcut icon" typo="image/png" href="img/favicon.png">
+</head>
+body
+h1=The park Camper
+h2= user.toUpperCase();
+- const x=9;
+h2=2*x
+p this is just some text
+
